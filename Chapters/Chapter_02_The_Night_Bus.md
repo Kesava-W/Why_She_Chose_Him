@@ -1,0 +1,21 @@
+# Chapter Two: The Night Bus
+
+She left with a single bag, the same one she'd carried to Delhi and back three times already, packed now with less thought than either of those trips had taken. A change of clothes. Her degree certificate, folded into a plastic sleeve so the damp wouldn't get at it on the way down. Whatever cash she'd kept aside from the summer, wrapped in a handkerchief that had been her grandmother's, though she hadn't stopped to consider that detail until she was already an hour down the road and it was too late to feel anything about it either way.
+
+The house made its usual sounds settling for the night, and she knew every one of them - the particular creak of the third step, which she avoided; the dog, tied near the goth, who lifted his head once and put it back down when he recognised her; the tin roof over the store-room ticking as it cooled, the way it did every night regardless of who was or wasn't leaving under it. She had grown up inside this list of sounds without ever once needing to know she'd memorised it. She thought, going carefully down that third step in her socks with her sandals in her hand, that she probably wouldn't get the chance to un-memorise it either.
+
+The road out of the village ran along the ridge before it dropped, switchback after switchback, toward the motor stand two hours below. She didn't run it. She walked it, steadily, the way you walk something you've decided rather than something you're fleeing, though her heart didn't entirely agree with the distinction. Twice she stopped, telling herself it was to catch her breath, and both times stood a moment longer than breath required, looking back at where the house would have been if the dark hadn't already swallowed it whole.
+
+At the motor stand a single bulb burned over the ticket window, moths turning slow circles around it. The night bus to the plains left before dawn, half-empty this time of year, and the man at the counter didn't look twice at a girl travelling alone with a small bag - Delhi and back three times already meant she knew exactly how to hold herself so that no one looked twice. She'd learnt that without ever meaning to learn it, the same way she'd learnt the house's sounds.
+
+She took a window seat, put her bag between her feet, and watched the ridge go dark and then paler as the bus began its long descent, hairpin after hairpin, the headlights swinging out over drops she chose not to look at directly. Somewhere below, the terraced fields gave way to forest, and the forest, eventually, would give way to the flat brown distances that led, however many hours from now, to Delhi.
+
+She didn't cry. She'd expected to, a little, and was almost disappointed when it didn't come - as though there ought to have been a ceremony to this, some proper grief to mark the leaving, and instead there was only a window fogging faintly with her own breath and a road unspooling backward into a night she was already, in some small unwilled way, starting to forget the shape of.
+
+Somewhere past the second hour, doubt arrived the way it always did with her - not as a change of heart, but as a question she couldn't quite silence. What if this was exactly the mistake her father believed it to be? What if independence, once she reached wherever it actually lived, turned out to be smaller than the word had promised, back in that hostel room with the peeling blue paint? She turned the doubt over for a while, the way she'd turned over his stranger sentence the night before - *debts older than you* - two things she didn't have answers for, riding beside her in the dark.
+
+She didn't have an answer for the doubt either, in the end. She only had the fact of the bus moving, and the fact that she hadn't asked the driver to stop, and somewhere past the fourth hour that was answer enough to let her sleep, her forehead against the cool glass, the mountains gone from the window entirely by the time she woke.
+
+When she opened her eyes again it was full daylight, flat fields on either side, and a bus conductor calling out a stop that meant nothing to her yet but would, within the week, mean almost everything: a name she'd only ever seen written on the top of admission forms, now real and approaching through the windscreen glass. Delhi.
+
+She sat up straighter. She did not, this time, look back.

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Why She Chose Him</title>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Georgia,serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.9;
+}
+
+#progress-container{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:5px;
+    background:#ddd;
+    z-index:999;
+}
+
+#progress-bar{
+    height:5px;
+    width:0%;
+    background:#2563eb;
+}
+
+header{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+article{
+    background:white;
+    padding:35px;
+    border-radius:8px;
+    min-height:500px;
+}
+
+.navigation{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:6px;
+    background:#2563eb;
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="progress-container">
+<div id="progress-bar"></div>
+</div>
+
+<header>
+<h1>Why She Chose Him</h1>
+</header>
+
+<div class="container">
+
+<article id="content">
+Loading chapter...
+</article>
+
+<div class="navigation">
+
+<a id="prevBtn" class="btn" href="#">
+← Previous
+</a>
+
+<a class="btn" href="index.html">
+Home
+</a>
+
+<a id="nextBtn" class="btn" href="#">
+Next →
+</a>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Kesava Nittala
+</footer>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const content = document.getElementById("content");
+
+fetch("chapters.json")
+.then(response => {
+
+    if(!response.ok){
+        throw new Error("Chapter list not found");
+    }
+
+    return response.json();
+
+})
+.then(chapters => {
+
+    const chapterOrder = chapters.map(c => c.file);
+
+    const file = params.get("file") || chapterOrder[0];
+
+    const currentIndex = chapterOrder.indexOf(file);
+
+    if(currentIndex > 0){
+        document.getElementById("prevBtn").href =
+        `chapter.html?file=${encodeURIComponent(chapterOrder[currentIndex-1])}`;
+    }else{
+        document.getElementById("prevBtn").style.visibility="hidden";
+    }
+
+    if(currentIndex > -1 && currentIndex < chapterOrder.length-1){
+        document.getElementById("nextBtn").href =
+        `chapter.html?file=${encodeURIComponent(chapterOrder[currentIndex+1])}`;
+    }else{
+        document.getElementById("nextBtn").style.visibility="hidden";
+    }
+
+    return fetch(`Chapters/${encodeURIComponent(file)}.md`);
+
+})
+.then(response => {
+
+    if(!response.ok){
+        throw new Error("Chapter not found");
+    }
+
+    return response.text();
+
+})
+.then(markdown => {
+
+    content.innerHTML = marked.parse(markdown);
+
+})
+.catch(() => {
+
+    content.innerHTML = `
+        <h2>Chapter Not Found</h2>
+    `;
+
+});
+
+window.addEventListener("scroll", () => {
+
+    const winScroll =
+    document.documentElement.scrollTop;
+
+    const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+    const scrolled =
+    (winScroll/height)*100;
+
+    document.getElementById("progress-bar").style.width =
+    scrolled + "%";
+
+});
+
+</script>
+
+<script src="feedback.js" data-story="Why She Chose Him"></script>
+
+</body>
+</html>
