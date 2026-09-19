@@ -157,6 +157,23 @@ footer{
     transform:translateY(-2px);
 }
 
+
+/* The height attribute on the cover is only there to reserve space; let the width decide the height. */
+.cover-image{height:auto}
+
+/* Phones: stack the hero with a large cover, and let the sticky nav be the only menu. */
+@media (max-width:700px){
+    header{padding:28px 14px 22px}
+    .hero-layout{flex-direction:column;gap:0}
+    .side-menu{display:none}
+    .cover-wrapper{width:min(88%,420px);margin-bottom:0}
+    .start-reading{position:static;margin-top:16px;text-align:center}
+    .start-reading a{display:block}
+    nav{padding:10px 8px}
+    nav a{display:inline-block;margin:4px 8px}
+    main{padding:14px 10px}
+    section{padding:18px 16px}
+}
 </style>
 </head>
 
@@ -177,9 +194,7 @@ footer{
 <div class="cover-column">
 <div class="cover-wrapper">
 
-<img src="cover.png"
-     alt="Why She Chose Him Cover"
-     class="cover-image">
+<img src="cover-800.webp" srcset="cover-480.webp 480w, cover-800.webp 800w, cover-1200.webp 1200w, cover-1263.webp 1263w" sizes="(max-width: 700px) min(88vw, 420px), (max-width: 1100px) 50vw, 850px" width="1263" height="2250" alt="Why She Chose Him Cover" class="cover-image" fetchpriority="high">
 
 <div class="start-reading">
 <a id="startReading" href="chapter.html">

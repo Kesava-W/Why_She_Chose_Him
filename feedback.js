@@ -41,6 +41,7 @@
         "cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.3);transition:background .2s,transform .2s}",
         ".fb-open:hover{background:#2563eb;transform:translateY(-2px)}",
         ".fb-open svg{width:18px;height:18px;fill:currentColor}",
+        "@media(max-width:700px){.fb-open{right:12px;bottom:12px;padding:13px}.fb-open span{display:none}}",
         ".fb-overlay{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;",
         "padding:16px;background:rgba(17,24,39,.6)}",
         ".fb-overlay.fb-show{display:flex}",
@@ -88,6 +89,7 @@
     var openBtn = document.createElement("button");
     openBtn.type = "button";
     openBtn.className = "fb-open";
+    openBtn.setAttribute("aria-label", "Feedback");
     openBtn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 1-2z"/></svg><span>Feedback</span>';
 
     var overlay = document.createElement("div");
